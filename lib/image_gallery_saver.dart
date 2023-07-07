@@ -10,7 +10,7 @@ class ImageGallerySaver {
   /// imageBytes can't null
   /// return Map type
   /// for example:{"isSuccess":true, "filePath":String?}
-  static FutureOr<dynamic> saveImage(Uint8List imageBytes,
+  static Future<dynamic> saveImage(Uint8List imageBytes,
       {int quality = 80,
       String? name,
       bool isReturnImagePathOfIOS = false}) async {
